@@ -1,0 +1,41 @@
+site_name: powersync
+site_url: https://explodinglabs.com/powersync/
+repo_url: https://github.com/explodinglabs/powersync
+theme:
+  name: material
+  logo: assets/logo.png
+  features:
+    - navigation.footer
+    - palette.toggle
+    - content.code.copy
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      scheme: default
+      primary: "pink"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: "pink"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: "pink"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+plugins:
+  - search
+extra_css:
+  - assets/extra.css
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
